@@ -9,13 +9,7 @@ import java.security.Principal;
 public final class Index {
 
     @GetMapping("/")
-    public String index(Principal principal) {
-        final String page;
-        if (principal != null) {
-            page = "redirect:/user";
-        } else {
-            page = "index";
-        }
-        return page;
+    public String index() {
+        return "index";
     }
 }

@@ -4,9 +4,9 @@
 <body>
 
     <div>
-        Hello <span th:text="${user.fullName}">{user}</span>
+        Hello <span th:text="${user.fullName}"></span>
 
-        <img th:src="${{user.avatar}}"/>
+        <img th:src="${{user.avatar}}" width="64"/>
 
         <a href="/logout">Logout</a>
     </div>
