@@ -1,0 +1,13 @@
+body {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.signup-form {
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    background-color: red;
+}

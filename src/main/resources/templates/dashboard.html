@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="head.html :: head"> </head>
+<body>
+
+    <div>
+        Hello <span th:text="${user.fullName}">{user}</span>
+
+        <img th:src="${{user.avatar}}"/>
+
+        <a href="/logout">Logout</a>
+    </div>
+
+
+
+    <p>
+        <div>
+            Question id: <span th:text="${question.id}"></span>
+        </div>
+
+       <div th:text="${question.title}"/>
+</body>
+</html>

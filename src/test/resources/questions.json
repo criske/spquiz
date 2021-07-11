@@ -1,0 +1,645 @@
+[
+  {
+    "id": 604,
+    "question": "Will a comparison of an integer 12 and a string \"13\" work in PHP?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "In PHP you can compare strings with numbers.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 971,
+    "question": "Which of the following are true for etcd?",
+    "description": null,
+    "answers": {
+      "answer_a": "etcd is the primary datastore of Kubernetes; storing and replicating all Kubernetes cluster state",
+      "answer_b": "etcd is a distributed key-value store",
+      "answer_c": "To encrypt cluster data and send it to a secrets manager",
+      "answer_d": "To validate cluster nodes",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 576,
+    "question": "How can we add comments in PHP?",
+    "description": null,
+    "answers": {
+      "answer_a": "// commented code to end of line",
+      "answer_b": "/* commented code here */",
+      "answer_c": "# commented code to end of line",
+      "answer_d": "all of the above",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 79,
+    "question": "In PHP, the only way to output text is with echo.",
+    "description": null,
+    "answers": {
+      "answer_a": "False",
+      "answer_b": "True",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 910,
+    "question": "What used to be called a minion in Kubernetes cluster?",
+    "description": null,
+    "answers": {
+      "answer_a": "A component of the master node.",
+      "answer_b": "A monitoring engine used widely in Kubernetes.",
+      "answer_c": "Docker container service.",
+      "answer_d": "A worker node.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 1073,
+    "question": "What is the default priority of the swap partition",
+    "description": null,
+    "answers": {
+      "answer_a": "0",
+      "answer_b": "-1",
+      "answer_c": "10",
+      "answer_d": "1",
+      "answer_e": "There are no priorities for swap",
+      "answer_f": "100"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 1045,
+    "question": "What does the Ansible setup module do?",
+    "description": null,
+    "answers": {
+      "answer_a": "It helps you setup Ansible on the master server",
+      "answer_b": "It helps you install Ansible on all of your servers",
+      "answer_c": "It shows you the information that the Ansible master server has about a host",
+      "answer_d": "It sets up the connection between the master and the worker nodes",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "DevOps"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 250,
+    "question": "Which type you will select if you need to store binary data?",
+    "description": null,
+    "answers": {
+      "answer_a": "BLOB",
+      "answer_b": "BIGINT",
+      "answer_c": "INT",
+      "answer_d": "None of the above",
+      "answer_e": "Both BIGINT and INT",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 573,
+    "question": "Which of the following is not true?",
+    "description": null,
+    "answers": {
+      "answer_a": "PHP can be used to develop web applications.",
+      "answer_b": "PHP can not be embedded into html.",
+      "answer_c": "PHP applications can not be compiled",
+      "answer_d": "PHP makes a website dynamic",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 101,
+    "question": "Can you run several versions of PHP at the same time?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 822,
+    "question": "Suppose you have an application that has many dependant services. Will docker compose wait for the current container to be ready to move to the running of the next service?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 694,
+    "question": "Which command can be used to rename a file/directory?",
+    "description": null,
+    "answers": {
+      "answer_a": "mv",
+      "answer_b": "cp",
+      "answer_c": "rename",
+      "answer_d": "rm",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 627,
+    "question": "How can we set infinite execution time for a PHP script?",
+    "description": null,
+    "answers": {
+      "answer_a": "Add set_time_limit() at the beginning of a script",
+      "answer_b": "Add set_time_limit(infinity) at the beginning of a script",
+      "answer_c": "Add set_time_limit(0) at the beginning of a script",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following runlevel will reboot the system?",
+    "description": null,
+    "answers": {
+      "answer_a": "5",
+      "answer_b": "6",
+      "answer_c": "3",
+      "answer_d": "4",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 944,
+    "question": "Which of the following is true for Kubernetes volumes?",
+    "description": null,
+    "answers": {
+      "answer_a": "In Kubernetes, a volume can be thought of as a directory which is accessible to the containers in a pod.",
+      "answer_b": "In Kubernetes, a volume can be thought of as a storage for the master nodes.",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 59,
+    "question": "PHP server scripts are surrounded by delimiters, which?",
+    "description": null,
+    "answers": {
+      "answer_a": "<&>...</&>",
+      "answer_b": "<?php...?>",
+      "answer_c": "<?php>...</?>",
+      "answer_d": "<script>...</script>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 990,
+    "question": "What is the correct JavaScript syntax for opening a new window called \"w2\" ?",
+    "description": null,
+    "answers": {
+      "answer_a": "w2 = window.new(\"http://www.w3schools.com\");",
+      "answer_b": "w2 = window.open(\"http://www.w3schools.com\");",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "JavaScript"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 241,
+    "question": "Can you start two MySQL servers at one PC?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1072,
+    "question": "If we wish to mount a directory with Read Only option, which of the following is correct",
+    "description": null,
+    "answers": {
+      "answer_a": "mount -t ext4 -o noexect,ro /path/to-dir /mnt/folder",
+      "answer_b": "mount ext4 -no-read-only /path/to-dir /mnt/folder",
+      "answer_c": "mount -t ext4 -o noexect,ro /mnt/folder /path/to-dir",
+      "answer_d": "mount ext4 -no-read-only /mnt/folder /path/to-dir",
+      "answer_e": "mount ext4 noexect,ro /path/to-dir /mnt/folder",
+      "answer_f": "mount ext4 -no-read-only /mnt/folder /path/to-dir"
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 811,
+    "question": "How to delete a stopped container?",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker ---rm <container id>",
+      "answer_b": "$ docker rm -n <container id>",
+      "answer_c": "$ docker rm <container id>",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  }
+]
