@@ -4,22 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.logout.LogoutFilter;
 import pcf.crksdev.spquiz.services.user.SpQuizUserDetailsService;
 import pcf.crksdev.spquiz.services.user.SpquizOAuth2UserService;
 import pcf.crksdev.spquiz.services.user.UserService;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
 
 @Configuration
 @EnableWebSecurity
@@ -30,24 +25,6 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private UserService userService;
-
-    private final AuthenticationSuccessHandler successHandler = (
-        request,
-        response, authentication
-    ) -> {
-        class MutatedMethodHttpServletRequest extends HttpServletRequestWrapper {
-            public MutatedMethodHttpServletRequest(HttpServletRequest request) {
-                super(request);
-            }
-
-            @Override
-            public String getMethod() {
-                return HttpMethod.GET.name();
-            }
-        }
-        request.getRequestDispatcher("/user")
-            .forward(new MutatedMethodHttpServletRequest(request), response);
-    };
 
     @Override
     public void configure(WebSecurity web) {
@@ -72,20 +49,19 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
             .logoutSuccessUrl("/")
             .and()
             .formLogin()
-            .successHandler(successHandler)
-            .loginPage("/")
+            .loginPage("/login")
             .and()
             .oauth2Login()
-            .successHandler(successHandler)
             .userInfoEndpoint(config -> config
                 .oidcUserService(new SpquizOAuth2UserService(environment))
-            );
-
+            )
+            .and()
+            .addFilterAfter(new RedirectToUserWhenAuthenticatedFilter("/", "/login"),
+                LogoutFilter.class);
     }
 
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
 }
