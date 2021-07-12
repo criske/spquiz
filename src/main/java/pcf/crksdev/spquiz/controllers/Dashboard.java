@@ -1,5 +1,6 @@
 package pcf.crksdev.spquiz.controllers;
 
+import org.jetbrains.annotations.NotNull;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,20 +19,19 @@ public final class Dashboard {
     }
 
     @PostMapping ("/user")
-    public String userSuccess(Model model, @AuthenticationPrincipal SpquizUser principal) {
-        model.addAttribute("user", principal);
-
-        // model.addAttribute("user",user);
-        var question = quizService.startOrResumeSession().orElseThrow();
-        model.addAttribute("question", question);
-        return "dashboard";
+    public String userRedirected(Model model, @AuthenticationPrincipal SpquizUser principal) {
+        return getUser(model, principal);
     }
 
     @GetMapping("/user")
     public String user(Model model, @AuthenticationPrincipal SpquizUser principal) {
-        model.addAttribute("user", principal);
+        return getUser(model, principal);
+    }
 
-        // model.addAttribute("user",user);
+    @NotNull
+    private String getUser(Model model,
+                           SpquizUser principal) {
+        model.addAttribute("user", principal);
         var question = quizService.startOrResumeSession().orElseThrow();
         model.addAttribute("question", question);
         return "dashboard";

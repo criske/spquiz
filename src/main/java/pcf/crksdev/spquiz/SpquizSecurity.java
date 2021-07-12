@@ -27,7 +27,7 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
     private UserService userService;
 
     @Override
-    public void configure(WebSecurity web) throws Exception {
+    public void configure(WebSecurity web) {
         web.ignoring().mvcMatchers("/static/**");
     }
 
@@ -46,7 +46,6 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
             .and()
             .logout()
             .logoutSuccessUrl("/")
-            .clearAuthentication(true)
             .and()
             .formLogin()
             .successForwardUrl("/user")
