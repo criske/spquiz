@@ -9,12 +9,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import pcf.crksdev.spquiz.services.user.SpQuizUserDetailsService;
 import pcf.crksdev.spquiz.services.user.SpquizOAuth2UserService;
 import pcf.crksdev.spquiz.services.user.UserService;
-import pcf.crksdev.spquiz.services.user.SpQuizUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
@@ -32,7 +31,8 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    protected void configure(AuthenticationManagerBuilder auth)
+        throws Exception {
         auth.userDetailsService(new SpQuizUserDetailsService(userService));
     }
 
@@ -61,11 +61,6 @@ class SpquizSecurity extends WebSecurityConfigurerAdapter {
 
     @Bean
     PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
-    }
-
-    @Bean
-    UserDetailsService detailsService(UserService userService) {
-        return new SpQuizUserDetailsService(userService);
+        return new Argon2PasswordEncoder();
     }
 }
