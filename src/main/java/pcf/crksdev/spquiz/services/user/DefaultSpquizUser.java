@@ -2,7 +2,7 @@ package pcf.crksdev.spquiz.services.user;
 
 import java.net.URI;
 
-public class User {
+public final class DefaultSpquizUser implements SpquizUser {
 
     private final String id;
 
@@ -14,7 +14,7 @@ public class User {
 
     private final String password;
 
-    public User(
+    public DefaultSpquizUser(
         String id,
         String password,
         String fullName,

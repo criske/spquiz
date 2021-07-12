@@ -22,7 +22,7 @@ class QuizFetcherImpl implements QuizFetcher {
 
     private final RestOperations restOperations;
 
-    private final UriComponentsBuilder uriBuilder;
+    private final URI apiUrl;
 
     QuizFetcherImpl(
         @Value("${pcf.crksdev.spquiz.services.quiz.api-url}") URI apiUrl,
@@ -31,13 +31,17 @@ class QuizFetcherImpl implements QuizFetcher {
         this.restOperations = new RestTemplateBuilder()
             .defaultHeader("X-Api-Key", apiKey)
             .build();
-        this.uriBuilder = UriComponentsBuilder.fromUri(apiUrl);
+        this.apiUrl = apiUrl;
     }
 
     @Override
     public List<QuizQuestion> fetch() {
+        String uri = UriComponentsBuilder
+            .fromUri(apiUrl)
+            .pathSegment("questions")
+            .toUriString();
         QuizQuestion[] questions = this.restOperations.getForObject(
-            uriBuilder.pathSegment("questions").toUriString(),
+            uri,
             QuizQuestion[].class
         );
         return questions != null

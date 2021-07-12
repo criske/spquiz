@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
-import pcf.crksdev.spquiz.services.user.User;
+import pcf.crksdev.spquiz.services.user.DefaultSpquizUser;
 import pcf.crksdev.spquiz.services.user.UserService;
 
 import java.net.URI;
@@ -26,7 +26,7 @@ public class SpquizApplication {
     ApplicationRunner applicationRunner() {
         return (args) -> {
             userService.register(
-                new User("criske", "123", "Cristoper", "criske@example.com",
+                new DefaultSpquizUser("criske", "123", "Cristoper", "criske@example.com",
                     URI.create("https://avatars.githubusercontent" +
                         ".com/u/10284893?v=4")
                 ));
